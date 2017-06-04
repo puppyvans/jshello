@@ -1,2 +1,2 @@
 # jshello
-learn how to use JavaScript
+learn how to use JavaScript demo
