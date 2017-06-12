@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script src="./angular.js"></script>
+</head>
+
+<body>
+
+  <div ng-app="">
+    <form>
+      选中复选框，显示标题:
+      <input type="checkbox" ng-model="myVar"><br> 选中复选框，显示内容:
+      <input type="checkbox" ng-model="myVar2">
+    </form>
+    <h1 ng-show="myVar">Hello</h1>
+    <h1 ng-show="myVar2">World</h1>
+  </div>
+
+
+
+</body>
+
+</html>

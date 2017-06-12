@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="./angular.js"></script>
+</head>
+
+<body ng-app="myApp">
+    <!-- directive: puppy-directive -->
+    <script>
+        var app = angular.module("myApp", []);
+        app.directive("puppyDirective", function () {
+            return {
+                restrict: "M",
+                replace: true,
+                template: "<h1>通过注释自定义指令</h1>"
+            };
+        });
+    </script>
+    <p>必须设置 <b>restrict</b> 的值为 "M" 才能通过类名来调用指令。</p>
+    <p>需要在该实例添加 <b>replace</b> 属性, 否则评论是不可见的。</p>
+</body>
+
+</html>

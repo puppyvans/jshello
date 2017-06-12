@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="./angular.js"></script>
+</head>
+
+<body ng-app="myApp">
+    <puppy-directive></puppy-directive>
+    <script>
+        var app = angular.module("myApp", []);
+        app.directive("puppyDirective", function () {
+            return {
+                template: "<h1>通过元素名自定义指令</h1>"
+            };
+        });
+    </script>
+
+</body>
+
+</html>
